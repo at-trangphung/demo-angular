@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyARbhEv5aYinUuf4Ja3ZXa_Mmlt8UIIAuA',
+    authDomain: 'catus-project.firebaseapp.com',
+    databaseURL: 'https://catus-project.firebaseio.com',
+    projectId: 'catus-project',
+    storageBucket: 'catus-project.appspot.com',
+    messagingSenderId: '256585097229',
+    appId: '1:256585097229:web:0ab9d516b1ffe79ce27544',
+    measurementId: 'G-SD3ZQK9P5W'
+  }
 };
 
 /*

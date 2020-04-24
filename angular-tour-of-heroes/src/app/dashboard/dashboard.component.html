@@ -1,0 +1,8 @@
+<h3>Top Catus</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let catus of catuses" class="col-1-4" routerLink="/detail/{{catus.id}}">
+    <div class="module hero">
+      <h4>{{catus.name}}</h4>
+    </div>
+  </a>
+</div>

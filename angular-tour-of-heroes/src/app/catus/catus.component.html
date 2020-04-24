@@ -1,0 +1,23 @@
+<!-- <h2>{{catus.name | uppercase}} Details</h2>
+<div><span>id: </span>{{catus.id}}</div>
+<div><span>name: </span>{{catus.name}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="catus.name" placeholder="name"/>
+  </label>
+</div> -->
+
+<h2>My Catus</h2>
+<!-- <ul class="heroes">
+  <li *ngFor="let catus of catuses" (click)="onSelect(catus)" [class.selected]="catus === selectedCatus">
+    <span class="badge">{{catus.id}}</span> {{catus.name}}
+  </li>
+</ul> -->
+<ul class="heroes">
+  <li *ngFor="let catus of catuses">
+    <a routerLink="/detail/{{catus.id}}">
+      <span class="badge">{{catus.id}}</span> {{catus.name}}
+    </a>
+  </li>
+</ul>
+<!-- <app-catus-detail [catus]="selectedCatus"></app-catus-detail> -->
